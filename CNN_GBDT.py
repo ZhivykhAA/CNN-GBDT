@@ -36,7 +36,7 @@ def CNN_model():
 
 # define GBDT model
 def GBDT_model(lr, md, ne, mcw):
-    # learning_rate=0.5, max_depth=5, n_estimators=40, min_child_weight=3,
+    # learning_rate=0.5, max_depth=4, n_estimators=60, min_child_weight=3,
     model = xgb.XGBClassifier(learning_rate=lr, max_depth=md, n_estimators=ne, min_child_weight=mcw,
                             objective="multi:softprob", eval_metric="mlogloss")
 
